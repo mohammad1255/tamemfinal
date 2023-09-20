@@ -1,0 +1,751 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#"
+     xml:base="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-40="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#authoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#authoredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#availableInLibrary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#availableInLibrary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Library"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#belongsToBook -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#belongsToBook">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#belongsToUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#belongsToUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasPreferredGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasPreferredGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRead -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRead">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasrecom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasrecom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RecommendedBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasrecommand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasrecommand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RecommendedBook"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#publishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#publishedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#reviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#reviews">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#AuthorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#AuthorName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#AuthorNationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#AuthorNationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Publisher">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#ReviewerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#ReviewerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#belongsToLibrary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#belongsToLibrary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#comment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#comment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasISBN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasMinRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasMinRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasReview -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasReview">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#isLocatedIn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Library"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#publishedInYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#publishedInYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Library"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MysteryGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MysteryGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RomanceGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Publisher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RecommendedBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RecommendedBook"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RomanceGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RomanceGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+        <untitled-ontology-40:AuthorName>John Doe</untitled-ontology-40:AuthorName>
+        <untitled-ontology-40:AuthorNationality>American</untitled-ontology-40:AuthorNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+        <untitled-ontology-40:AuthorNationality>American</untitled-ontology-40:AuthorNationality>
+        <untitled-ontology-40:AuthorNationality>John Frank</untitled-ontology-40:AuthorNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Author"/>
+        <untitled-ontology-40:AuthorName>Mohammad</untitled-ontology-40:AuthorName>
+        <untitled-ontology-40:AuthorNationality>USA</untitled-ontology-40:AuthorNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <untitled-ontology-40:authoredBy rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther1"/>
+        <untitled-ontology-40:hasGenre rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MG1"/>
+        <untitled-ontology-40:hasGenre rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Ro1"/>
+        <untitled-ontology-40:reviews rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review1"/>
+        <untitled-ontology-40:Publisher>ABC Publishing</untitled-ontology-40:Publisher>
+        <untitled-ontology-40:Title>The Great Novel</untitled-ontology-40:Title>
+        <untitled-ontology-40:hasISBN>978-1234567890</untitled-ontology-40:hasISBN>
+        <untitled-ontology-40:publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</untitled-ontology-40:publishedInYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <untitled-ontology-40:authoredBy rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther1"/>
+        <untitled-ontology-40:hasGenre rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MG1"/>
+        <untitled-ontology-40:reviews rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review2"/>
+        <untitled-ontology-40:Publisher>ABC Publishing</untitled-ontology-40:Publisher>
+        <untitled-ontology-40:Title>The Great Novel</untitled-ontology-40:Title>
+        <untitled-ontology-40:hasISBN>978-1234567891</untitled-ontology-40:hasISBN>
+        <untitled-ontology-40:publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</untitled-ontology-40:publishedInYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+        <untitled-ontology-40:authoredBy rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Auther3"/>
+        <untitled-ontology-40:reviews rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review1"/>
+        <untitled-ontology-40:Publisher>mohammad</untitled-ontology-40:Publisher>
+        <untitled-ontology-40:Title>Hingofer</untitled-ontology-40:Title>
+        <untitled-ontology-40:hasISBN>978-1234567892</untitled-ontology-40:hasISBN>
+        <untitled-ontology-40:publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</untitled-ontology-40:publishedInYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MG1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MG1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MysteryGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <untitled-ontology-40:belongsToBook rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book1"/>
+        <untitled-ontology-40:belongsToUser rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User1"/>
+        <untitled-ontology-40:ReviewerName>Alice Johnson</untitled-ontology-40:ReviewerName>
+        <untitled-ontology-40:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</untitled-ontology-40:rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Review"/>
+        <untitled-ontology-40:ReviewerName>Ahmad belal</untitled-ontology-40:ReviewerName>
+        <untitled-ontology-40:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4</untitled-ontology-40:rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Ro1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Ro1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Genre"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RomanceGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Sc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Sc1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+        <untitled-ontology-40:hasPreferredGenre rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Ro1"/>
+        <untitled-ontology-40:hasRead rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book1"/>
+        <untitled-ontology-40:hasMinRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</untitled-ontology-40:hasMinRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+        <untitled-ontology-40:hasPreferredGenre rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#MG1"/>
+        <untitled-ontology-40:hasMinRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</untitled-ontology-40:hasMinRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#recommend1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#recommend1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RecommendedBook"/>
+        <untitled-ontology-40:hasrecommand rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#genre">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#minRating">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#ratings">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#readBook">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasPreferredGenre"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#genre"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasMinRating"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#minRating"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasGenre"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#genre"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRating"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#ratings"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#ratings"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#minRating"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#RecommendedBook"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRead"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#readBook"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#Book"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasGenre"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#genre"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#readBook"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2023/8/untitled-ontology-40#hasRead"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mohammadothman/ontologies/2023/8/untitled-ontology-40#book"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
